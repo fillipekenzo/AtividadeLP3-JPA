@@ -10,7 +10,7 @@ public class EntityManagerUtil {
 
 	public static EntityManager getEntityManager() {
 		if (factory == null) {
-			factory = Persistence.createEntityManagerFactory("locadoraVeiculoPU");
+			factory = Persistence.createEntityManagerFactory("hotelPU");
 		}
 		if (em == null) {
 			em = factory.createEntityManager();
