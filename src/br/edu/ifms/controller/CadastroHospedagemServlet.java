@@ -41,8 +41,7 @@ public class CadastroHospedagemServlet extends HttpServlet {
 
 		hospedagem.setPessoa(pessoaDAO.buscarPeloCodigo(codigoPessoa));
 		hospedagem.setQuarto(quartoDAO.buscarPeloCodigo(codigoQuarto));
-		hospedagem.setStatus(Status.valueOf
-				 (request.getParameter("status")));
+		
 		String dataConv = request.getParameter("dataEntrada");
 		String dataConv2 = request.getParameter("dataSaida");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

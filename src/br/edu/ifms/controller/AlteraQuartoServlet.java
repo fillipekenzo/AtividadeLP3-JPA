@@ -67,7 +67,7 @@ public class AlteraQuartoServlet extends HttpServlet {
 			(quartoDAO.buscarQuartoComComodidades(quarto2.getCodigo()));
 		}
 		 
-		RequestDispatcher rd = request.getRequestDispatcher("listaCarros.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("listaQuartos.jsp");
 		request.setAttribute("quartosComodidades", listaQuartosComComodidades);
 		rd.forward(request, response);
 	}

@@ -22,7 +22,9 @@ import java.util.List;
 @Entity
 @NamedQueries({
 	@NamedQuery(name="Quarto.buscarTodos", query="select q from Quarto q"),
-	
+	@NamedQuery(name="Quarto.buscarQuartoComComodidades", query="select q "
+			+ "	from Quarto q JOIN q.comodidades c "
+			+ " where q.codigo = :codigo")
 })
 
 public class Quarto {

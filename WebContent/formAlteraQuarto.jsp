@@ -27,7 +27,7 @@
 				<br/>
 		Tipo de quarto:
 				<select name="tipoQuarto">
-					<option value="${quarto.tipoQuarto}">value="${quarto.tipoQuarto}"</option>
+					<option value="${quarto.tipoQuarto}">${quarto.tipoQuarto}</option>
 					<c:forEach var="tipoQuarto" items="${tipoQuartos}">
 						<option value="${tipoQuarto}" >
 							${tipoQuarto.descricao}</option>

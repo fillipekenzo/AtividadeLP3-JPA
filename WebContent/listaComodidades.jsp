@@ -19,13 +19,13 @@
 		<td>${comodidade.codigo}</td>
 		<td>${comodidade.descricao}</td>	
 		<td>	
-		<a href="/AtividadeLP3-JPA/atualizaComodidades?codigo=${comodidade.codigo}">
+		<a href="/lp3-FillipeKenzo/atualizaComodidades?codigo=${comodidade.codigo}">
 		Editar
 		</a>
 		</td>		
 		
 		<td>
-		<a href="/AtividadeLP3-JPA/removeComodidades?codigo=${comodidade.codigo}">
+		<a href="/lp3-FillipeKenzo/removeComodidades?codigo=${comodidade.codigo}">
 		Remover
 		</a>
 		</td>		

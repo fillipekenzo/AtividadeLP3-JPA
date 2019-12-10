@@ -37,7 +37,7 @@ public class IniciaCadastroQuartoServlet extends HttpServlet {
 		
 		List<Disponibilidade> disponibilidades = Arrays.asList(Disponibilidade.values());
 		
-		RequestDispatcher rd = request.getRequestDispatcher("hospedagem.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("quarto.jsp");
 		// setando as listas na requisição
 		request.setAttribute("comodidades", comodidades);
 		request.setAttribute("tipoQuartos", tipoQuartos);

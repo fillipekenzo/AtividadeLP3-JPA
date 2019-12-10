@@ -18,10 +18,18 @@
 		<br />
 		Valor Diária: <input type="text" name="valorDiaria"  value="${hospedagem.valorDiaria}" />
 		<br />
-		
+		Status:
+				<select name="status">
+					<option value="${hospedagem.status}">${hospedagem.status}</option>
+					<c:forEach var="status" items="${status}">
+						<option value="${status}" >
+							${status.descricao}</option>
+					</c:forEach>
+				</select> 
+				<br/>	
 		Quarto:
 				<select name="quarto">
-					<option  value="${hospedagem.quarto.codigo}" >${hospedagem.quarto.nome}</option>
+					<option  value="${hospedagem.quarto.codigo}" >${hospedagem.quarto.numero}</option>
 					<c:forEach var="quarto" items="${quartos}">
 						<option value="${quarto.codigo}" >
 							${quarto.numero}</option>

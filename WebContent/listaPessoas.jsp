@@ -29,13 +29,13 @@
 		<td>${pessoa.sexo}</td>
 		<td>${pessoa.status}</td>
 		<td>	
-		<a href="/AtividadeLP3-JPA/atualizaPessoa?codigo=${pessoa.codigo}">
+		<a href="/lp3-FillipeKenzo/atualizaPessoa?codigo=${pessoa.codigo}">
 		Editar
 		</a>
 		</td>		
 		
 		<td>
-		<a href="/AtividadeLP3-JPA/removePessoa?codigo=${pessoa.codigo}">
+		<a href="/lp3-FillipeKenzo/removePessoa?codigo=${pessoa.codigo}">
 		Remover
 		</a>
 		</td>		

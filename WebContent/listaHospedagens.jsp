@@ -29,13 +29,13 @@
 		<td>${hospedagem.quarto.numero}</td>
 		<td>${hospedagem.status}</td>
 		<td>	
-		<a href="/AtividadeLP3-JPA/atualizaHospedagem?codigo=${hospedagem.codigo}">
+		<a href="/lp3-FillipeKenzo/atualizaHospedagem?codigo=${hospedagem.codigo}">
 		Editar
 		</a>
 		</td>		
 		
 		<td>
-		<a href="/AtividadeLP3-JPA/removeHospedagem?codigo=${hospedagem.codigo}">
+		<a href="/lp3-FillipeKenzo/removeHospedagem?codigo=${hospedagem.codigo}">
 		Remover
 		</a>
 		</td>		

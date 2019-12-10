@@ -21,7 +21,15 @@
 		<br />
 		Valor Diária: <input type="text" name="valorDiaria" />
 		<br />
-		
+		Status:
+				<select name="status">
+					<option value="">Selecione um status</option>
+					<c:forEach var="status" items="${status}">
+						<option value="${status}" >
+							${status.descricao}</option>
+					</c:forEach>
+				</select> 
+				<br/>	
 		Quarto:
 				<select name="quarto">
 					<option value="">Selecione o quarto</option>

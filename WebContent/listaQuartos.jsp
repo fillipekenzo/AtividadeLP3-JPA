@@ -19,27 +19,27 @@
 			<td>Comodidades</td>	
 						
 		</tr>
-		<c:forEach items="${quartos}" var="quarto">
+		<c:forEach items="${quartosComodidades}" var="quartosComodidade">
 		<tr> 
-		<td>${quarto.codigo}</td>
-		<td>${quarto.numero}</td>	
-		<td>${quarto.capacidade}</td>
-		<td>${quarto.disponibilidade}</td>
-		<td>${quarto.tipoQuarto}</td>
+		<td>${quartosComodidade.codigo}</td>
+		<td>${quartosComodidade.numero}</td>	
+		<td>${quartosComodidade.capacidade}</td>
+		<td>${quartosComodidade.disponibilidade}</td>
+		<td>${quartosComodidade.tipoQuarto}</td>
 		<td>
-		<c:forEach items="${quarto.comodidades}" var="comodidades">
+		<c:forEach items="${quartosComodidade.comodidades}" var="comodidades">
 		   ${comodidades.descricao}<br/>
 		</c:forEach>
 		</td>
 
 		<td>	
-		<a href="/AtividadeLP3-JPA/atualizaQuarto?codigo=${quarto.codigo}">
+		<a href="/lp3-FillipeKenzo/atualizaQuarto?codigo=${quartosComodidade.codigo}">
 		Editar
 		</a>
 		</td>		
 		
 		<td>
-		<a href="/AtividadeLP3-JPA/removeQuarto?codigo=${quarto.codigo}">
+		<a href="/lp3-FillipeKenzo/removeQuarto?codigo=${quartosComodidade.codigo}">
 		Remover
 		</a>
 		</td>		
